@@ -15,6 +15,7 @@
 		547EAD601CE2FDEA009B4F46 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 547EAD5E1CE2FDEA009B4F46 /* LaunchScreen.storyboard */; };
 		547EAD6B1CE2FDEA009B4F46 /* KVOTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 547EAD6A1CE2FDEA009B4F46 /* KVOTests.m */; };
 		547EAD761CE2FDEA009B4F46 /* KVOUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 547EAD751CE2FDEA009B4F46 /* KVOUITests.m */; };
+		547EAD851CE2FE15009B4F46 /* NSObject+KVO.m in Sources */ = {isa = PBXBuildFile; fileRef = 547EAD841CE2FE15009B4F46 /* NSObject+KVO.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		547EAD711CE2FDEA009B4F46 /* KVOUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = KVOUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		547EAD751CE2FDEA009B4F46 /* KVOUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = KVOUITests.m; sourceTree = "<group>"; };
 		547EAD771CE2FDEA009B4F46 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		547EAD831CE2FE15009B4F46 /* NSObject+KVO.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSObject+KVO.h"; sourceTree = "<group>"; };
+		547EAD841CE2FE15009B4F46 /* NSObject+KVO.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSObject+KVO.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -110,6 +113,8 @@
 				547EAD5E1CE2FDEA009B4F46 /* LaunchScreen.storyboard */,
 				547EAD611CE2FDEA009B4F46 /* Info.plist */,
 				547EAD501CE2FDEA009B4F46 /* Supporting Files */,
+				547EAD831CE2FE15009B4F46 /* NSObject+KVO.h */,
+				547EAD841CE2FE15009B4F46 /* NSObject+KVO.m */,
 			);
 			path = KVO;
 			sourceTree = "<group>";
@@ -270,6 +275,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				547EAD851CE2FE15009B4F46 /* NSObject+KVO.m in Sources */,
 				547EAD581CE2FDEA009B4F46 /* ViewController.m in Sources */,
 				547EAD551CE2FDEA009B4F46 /* AppDelegate.m in Sources */,
 				547EAD521CE2FDEA009B4F46 /* main.m in Sources */,

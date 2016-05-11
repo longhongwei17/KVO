@@ -7,21 +7,48 @@
 //
 
 #import "ViewController.h"
+#import "NSObject+KVO.h"
+
+@interface Message : NSObject
+
+@property (nonatomic, copy) NSString *text;
+
+@end
+@implementation Message
+
+@end
 
 @interface ViewController ()
+
+@property (nonatomic, strong) Message *message;
 
 @end
 
 @implementation ViewController
-
-- (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+- (IBAction)hhgd:(id)sender {
+    self.message.text = @"new";
 }
 
-- (void)didReceiveMemoryWarning {
+- (void)viewDidLoad
+{
+    [super viewDidLoad];
+    
+    self.message = [[Message alloc] init];
+    [self.message LW_addObserver:self forKey:NSStringFromSelector(@selector(text))
+                       withBlock:^(id observedObject, NSString *observedKey, id oldValue, id newValue) {
+//                           NSLog(@"%@.%@ is now: %@", observedObject, observedKey, newValue);
+//                           dispatch_async(dispatch_get_main_queue(), ^{
+//                               self.textfield.text = newValue;
+//                           });
+                           
+                       }];
+    
+
+}
+
+- (void)didReceiveMemoryWarning
+{
     [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
 }
 
 @end
